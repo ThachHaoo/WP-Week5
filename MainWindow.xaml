@@ -44,6 +44,7 @@
                                     <Run Text="{x:Bind Manufacturer}" Foreground="LightBlue"/>
                                     <Run  Text=" - "/>
                                     <Run  Text="{Binding Price, Converter={StaticResource PriceConverter}}" Foreground="Green"/>
+                                <!--Muốn Bind + Converter phải sử dụng static Converter-->
                             </TextBlock>
                         </StackPanel>
                         <!--Chưa cần dùng Mode=TwoWay, UpdateSourceTrigger=PropertyChanged bởi vì ở đây không có dữ liệu vào-->

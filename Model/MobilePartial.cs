@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace App1.Model
 {
-    internal class MobilePartial: INotifyPropertyChanged
+    public partial class MobilePartial: INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
     }
