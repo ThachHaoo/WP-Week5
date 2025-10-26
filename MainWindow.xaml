@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:App1"
     xmlns:model="using:App1.Model"
+    xmlns:converter="using:App1.View.Converter"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
@@ -15,6 +16,10 @@
     </Window.SystemBackdrop>
 
     <Grid>
+        <Grid.Resources>
+            <converter:PriceConverter x:Key="PriceConverter"/>
+        </Grid.Resources>
+        
         <ListView ItemsSource="{x:Bind ViewModel.Mobiles}"
                   VerticalAlignment="Stretch"
                   Grid.Column="0">
@@ -38,7 +43,7 @@
                                     <Run Text=" - "/>
                                     <Run Text="{x:Bind Manufacturer}" Foreground="LightBlue"/>
                                     <Run  Text=" - "/>
-                                    <Run  Text="{x:Bind Price}" Foreground="Green"/>
+                                    <Run  Text="{Binding Price, Mode=OneWay, Converter={StaticResource PriceConverter}}" Foreground="Green"/>
                             </TextBlock>
                         </StackPanel>
                         <!--Chưa cần dùng Mode=TwoWay, UpdateSourceTrigger=PropertyChanged bởi vì ở đây không có dữ liệu vào giống block-->
