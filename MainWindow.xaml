@@ -43,10 +43,10 @@
                                     <Run Text=" - "/>
                                     <Run Text="{x:Bind Manufacturer}" Foreground="LightBlue"/>
                                     <Run  Text=" - "/>
-                                    <Run  Text="{Binding Price, Mode=OneWay, Converter={StaticResource PriceConverter}}" Foreground="Green"/>
+                                    <Run  Text="{Binding Price, Converter={StaticResource PriceConverter}}" Foreground="Green"/>
                             </TextBlock>
                         </StackPanel>
-                        <!--Chưa cần dùng Mode=TwoWay, UpdateSourceTrigger=PropertyChanged bởi vì ở đây không có dữ liệu vào giống block-->
+                        <!--Chưa cần dùng Mode=TwoWay, UpdateSourceTrigger=PropertyChanged bởi vì ở đây không có dữ liệu vào-->
                         <Border Grid.Column="1" Background="Gray" Margin="0,0,12,0" BorderBrush="Coral" CornerRadius="25" BorderThickness="4">
                             <Image Source="{x:Bind Image}" Width="200" Height="200"/>
                         </Border>
