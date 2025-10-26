@@ -17,7 +17,10 @@
 
     <Grid>
         <Grid.Resources>
-            <converter:PriceConverter x:Key="PriceConverter"/>
+            <converter:PriceConverter x:Key="PriceConverter">
+                <!--Chỉnh sửa thuộc tính bên dưới để thay đổi ký hiệu tiền tệ, hiện tại giá tiền đang để theo ₫-->
+                <!--<converter:PriceConverter.CurrencySymbol>$</converter:PriceConverter.CurrencySymbol>-->
+            </converter:PriceConverter>
         </Grid.Resources>
         
         <ListView ItemsSource="{x:Bind ViewModel.Mobiles}"

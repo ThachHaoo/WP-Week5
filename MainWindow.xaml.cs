@@ -47,20 +47,7 @@ namespace App1
         {
             InitializeComponent();
         }
-
-        private void addMobileButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void deleteMobileButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void updateMobileButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
+        //POCOF5 8800000 Xiaomi là điện thoại dùng để add
     }
 }
