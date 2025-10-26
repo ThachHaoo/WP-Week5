@@ -1,0 +1,77 @@
+# =========================
+# Visual Studio / .NET ignore rules
+# =========================
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio cache files
+.vs/
+*.VC.db
+*.VC.VC.opendb
+
+## Generated files
+Generated\ Files/
+
+## Backup & report files
+*.bak
+*.backup
+*.log
+*.dmp
+
+## Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+## Package directories
+*.nuget/
+packages/
+*.nupkg
+*.snupkg
+
+## Auto-generated files
+*.tmp
+*.temp
+*.cache
+*.config.user
+
+## Publish directory
+publish/
+out/
+
+## Others
+*.dbmdl
+*.bak
+*.sqlite
+*.mdf
+*.ldf
+
+# JetBrains Rider
+.idea/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# =========================
+# END OF FILE
+# =========================
